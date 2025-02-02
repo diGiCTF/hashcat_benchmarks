@@ -1,0 +1,178 @@
+hashcat (v6.2.6-851-g6716447df+) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+The device #2 specifically listed was skipped because it is an alias of device #1
+
+CUDA API (CUDA 12.8)
+====================
+* Device #1: NVIDIA GeForce RTX 3090, 23848/24132 MB, 82MCU
+
+OpenCL API (OpenCL 3.0 CUDA 12.8.51) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #2: NVIDIA GeForce RTX 3090, skipped
+
+OpenCL API (OpenCL 3.0 PoCL 5.0+debian  Linux, None+Asserts, RELOC, SPIR, LLVM 16.0.6, SLEEF, DISTRO, POCL_DEBUG) - Platform #2 [The pocl project]
+==================================================================================================================================================
+* Device #3: cpu-skylake-avx512-AMD Ryzen 7 7800X3D 8-Core Processor, skipped
+
+Benchmark relevant options:
+===========================
+* --backend-devices-virtual=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#1.........: 64264.4 MH/s (42.20ms) @ Accel:128 Loops:1024 Thr:256 Vec:8
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#1.........: 20575.8 MH/s (66.23ms) @ Accel:32 Loops:1024 Thr:512 Vec:1
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#1.........:  8863.8 MH/s (77.06ms) @ Accel:8 Loops:1024 Thr:1024 Vec:1
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#1.........:  2964.9 MH/s (57.54ms) @ Accel:4 Loops:1024 Thr:512 Vec:1
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#1.........:  1011.1 kH/s (81.29ms) @ Accel:8 Loops:1024 Thr:512 Vec:1
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#1.........:   112.6 GH/s (23.72ms) @ Accel:128 Loops:1024 Thr:256 Vec:8
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#1.........: 61816.3 MH/s (21.73ms) @ Accel:64 Loops:1024 Thr:256 Vec:1
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#1.........: 64078.5 MH/s (84.69ms) @ Accel:128 Loops:1024 Thr:512 Vec:2
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#1.........:  4577.9 MH/s (74.62ms) @ Accel:4 Loops:1024 Thr:1024 Vec:1
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#1.........:  2674.6 MH/s (63.75ms) @ Accel:16 Loops:1024 Thr:128 Vec:1
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#1.........: 25039.8 kH/s (89.36ms) @ Accel:32 Loops:1000 Thr:1024 Vec:1
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt $2*$, Blowfish (Unix)) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#1.........:    96289 H/s (68.53ms) @ Accel:4 Loops:32 Thr:24 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#1.........:   436.3 kH/s (59.16ms) @ Accel:2048 Loops:512 Thr:128 Vec:1
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#1.........:  1482.9 MH/s (57.46ms) @ Accel:256 Loops:128 Thr:32 Vec:1
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#1.........:  1452.6 MH/s (58.69ms) @ Accel:256 Loops:128 Thr:32 Vec:1
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#1.........:   181.2 kH/s (76.56ms) @ Accel:8 Loops:1024 Thr:512 Vec:1
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#1.........:   101.8 kH/s (62.55ms) @ Accel:2 Loops:1024 Thr:512 Vec:1
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#1.........:  1225.6 kH/s (65.21ms) @ Accel:64 Loops:31 Thr:512 Vec:1
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#1.........:  1039.4 kH/s (76.40ms) @ Accel:16 Loops:4096 Thr:256 Vec:1
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#1.........:   133.4 kH/s (77.87ms) @ Accel:8 Loops:16384 Thr:256 Vec:1
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#1.........:   110.6 kH/s (94.07ms) @ Accel:16 Loops:256 Thr:1024 Vec:1
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#1.........:   767.7 kH/s (49.35ms) @ Accel:16 Loops:128 Thr:512 Vec:1
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#1.........:   140.5 kH/s (49.23ms) @ Accel:8 Loops:1024 Thr:256 Vec:1
+
+-------------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 100099]
+-------------------------------------------------------------------
+
+Speed.#1.........:    36426 H/s (93.77ms) @ Accel:8 Loops:512 Thr:1024 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#1.........:    13510 H/s (63.07ms) @ Accel:2 Loops:1024 Thr:1024 Vec:1
+
+Started: Sat Feb  1 17:21:56 2025
+Stopped: Sat Feb  1 17:24:12 2025
