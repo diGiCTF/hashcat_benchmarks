@@ -1,0 +1,242 @@
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+            CUDA SDK Toolkit required for proper device support and utilization.
+            Falling back to OpenCL runtime.
+
+* Device #1: WARNING! Kernel exec timeout is not disabled.
+            This may cause "CL_OUT_OF_RESOURCES" or related errors.
+            To disable the timeout, see: https://hashcat.net/q/timeoutpatch
+OpenCL API (OpenCL 3.0 CUDA 12.1.107) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce RTX 4070, 11456/12281 MB (3070 MB allocatable), 46MCU
+
+OpenCL API (OpenCL 3.0 ) - Platform #2 [Intel(R) Corporation]
+=============================================================
+* Device #2: Intel(R) UHD Graphics 730, 6464/13016 MB (2047 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#1.........: 55198.0 MH/s (13.82ms) @ Accel:512 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:  967.1 MH/s (51.59ms) @ Accel:256 Loops:512 Thr:16 Vec:4
+Speed.#*.........: 56165.1 MH/s
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#1.........: 18067.8 MH/s (42.49ms) @ Accel:64 Loops:1024 Thr:256 Vec:1
+Speed.#2.........:  388.7 MH/s (64.19ms) @ Accel:512 Loops:128 Thr:16 Vec:4
+Speed.#*.........: 18456.5 MH/s
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#1.........:  7828.4 MH/s (49.10ms) @ Accel:32 Loops:1024 Thr:256 Vec:1
+Speed.#2.........:  104.7 MH/s (59.59ms) @ Accel:128 Loops:64 Thr:32 Vec:4
+Speed.#*.........:  7933.2 MH/s
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#1.........:  2282.0 MH/s (84.28ms) @ Accel:64 Loops:256 Thr:256 Vec:1
+Speed.#2.........: 28183.3 kH/s (55.32ms) @ Accel:512 Loops:8 Thr:16 Vec:1
+Speed.#*.........:  2310.2 MH/s
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#1.........:  911.8 kH/s (51.20ms) @ Accel:16 Loops:1024 Thr:256 Vec:1
+Speed.#2.........:    17123 H/s (88.26ms) @ Accel:512 Loops:32 Thr:16 Vec:1
+Speed.#*.........:  928.9 kH/s
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#1.........: 92050.2 MH/s (8.15ms) @ Accel:512 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:  1619.1 MH/s (61.66ms) @ Accel:256 Loops:1024 Thr:16 Vec:4
+Speed.#*.........: 93669.2 MH/s
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#1.........: 54289.4 MH/s (14.01ms) @ Accel:512 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:  526.7 MH/s (47.35ms) @ Accel:64 Loops:1024 Thr:16 Vec:1
+Speed.#*.........: 54816.1 MH/s
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#1.........: 55575.2 MH/s (13.65ms) @ Accel:256 Loops:1024 Thr:64 Vec:1
+Speed.#2.........:  966.9 MH/s (51.46ms) @ Accel:128 Loops:128 Thr:128 Vec:4
+Speed.#*.........: 56542.1 MH/s
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#1.........:  4120.2 MH/s (46.62ms) @ Accel:64 Loops:256 Thr:256 Vec:1
+Speed.#2.........: 59717.9 kH/s (52.24ms) @ Accel:128 Loops:64 Thr:16 Vec:4
+Speed.#*.........:  4179.9 MH/s
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#1.........:  2040.0 MH/s (94.19ms) @ Accel:16 Loops:1024 Thr:256 Vec:1
+Speed.#2.........: 21198.4 kH/s (295.39ms) @ Accel:16 Loops:1024 Thr:16 Vec:1
+Speed.#*.........:  2061.2 MH/s
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#1.........: 23750.7 kH/s (27.21ms) @ Accel:64 Loops:1000 Thr:256 Vec:1
+Speed.#2.........:  367.4 kH/s (60.76ms) @ Accel:1024 Loops:62 Thr:16 Vec:4
+Speed.#*.........: 24118.1 kH/s
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt $2*$, Blowfish (Unix)) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#1.........:    23054 H/s (333.48ms) @ Accel:16 Loops:32 Thr:11 Vec:1
+Speed.#2.........:    1527 H/s (57.16ms) @ Accel:1 Loops:8 Thr:16 Vec:1
+Speed.#*.........:    24582 H/s
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#1.........:  339.5 kH/s (75.20ms) @ Accel:2048 Loops:512 Thr:128 Vec:1
+Speed.#2.........:    4583 H/s (88.37ms) @ Accel:128 Loops:128 Thr:128 Vec:1
+Speed.#*.........:  344.1 kH/s
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+* Device #2: ATTENTION! OpenCL kernel self-test failed.
+
+Your device driver installation is probably broken.
+See also: https://hashcat.net/faq/wrongdriver
+
+Speed.#1.........:  1186.9 MH/s (81.07ms) @ Accel:128 Loops:512 Thr:32 Vec:1
+Speed.#2.........:  9761.1 kH/s (80.34ms) @ Accel:128 Loops:32 Thr:8 Vec:4
+Speed.#*.........:  1196.7 MH/s
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+* Device #2: ATTENTION! OpenCL kernel self-test failed.
+
+Your device driver installation is probably broken.
+See also: https://hashcat.net/faq/wrongdriver
+
+Speed.#1.........:  1182.2 MH/s (81.37ms) @ Accel:512 Loops:128 Thr:32 Vec:1
+Speed.#2.........:  8808.7 kH/s (89.07ms) @ Accel:32 Loops:128 Thr:8 Vec:4
+Speed.#*.........:  1191.0 MH/s
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#1.........:  145.2 kH/s (54.63ms) @ Accel:32 Loops:512 Thr:256 Vec:1
+Speed.#2.........:    2946 H/s (87.11ms) @ Accel:512 Loops:32 Thr:16 Vec:1
+Speed.#*.........:  148.2 kH/s
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#1.........:    90435 H/s (79.88ms) @ Accel:8 Loops:1024 Thr:256 Vec:1
+Speed.#2.........:    1049 H/s (56.88ms) @ Accel:128 Loops:8 Thr:32 Vec:1
+Speed.#*.........:    91485 H/s
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#1.........:  1128.1 kH/s (82.31ms) @ Accel:8 Loops:1023 Thr:256 Vec:1
+Speed.#2.........:    13247 H/s (49.81ms) @ Accel:256 Loops:7 Thr:16 Vec:1
+Speed.#*.........:  1141.4 kH/s
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#1.........:  955.9 kH/s (91.10ms) @ Accel:256 Loops:4096 Thr:32 Vec:1
+Speed.#2.........:    18945 H/s (74.53ms) @ Accel:1 Loops:4096 Thr:256 Vec:4
+Speed.#*.........:  974.8 kH/s
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#1.........:  131.4 kH/s (89.33ms) @ Accel:16 Loops:16384 Thr:256 Vec:1
+Speed.#2.........:    2453 H/s (153.73ms) @ Accel:16 Loops:16384 Thr:16 Vec:4
+Speed.#*.........:  133.9 kH/s
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#1.........:    97023 H/s (58.68ms) @ Accel:16 Loops:1024 Thr:256 Vec:1
+Speed.#2.........:    1975 H/s (95.26ms) @ Accel:256 Loops:16 Thr:64 Vec:1
+Speed.#*.........:    98998 H/s
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#1.........:  676.2 kH/s (63.58ms) @ Accel:16 Loops:512 Thr:256 Vec:1
+Speed.#2.........:    12178 H/s (63.48ms) @ Accel:256 Loops:16 Thr:16 Vec:1
+Speed.#*.........:  688.4 kH/s
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#1.........:  117.5 kH/s (66.66ms) @ Accel:16 Loops:1024 Thr:256 Vec:1
+Speed.#2.........:    2457 H/s (51.62ms) @ Accel:8 Loops:128 Thr:128 Vec:1
+Speed.#*.........:  120.0 kH/s
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#1.........:  6066.8 kH/s (39.18ms) @ Accel:64 Loops:249 Thr:256 Vec:1
+Speed.#2.........:  127.3 kH/s (87.35ms) @ Accel:256 Loops:31 Thr:32 Vec:1
+Speed.#*.........:  6194.2 kH/s
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#1.........:    11853 H/s (81.06ms) @ Accel:32 Loops:512 Thr:256 Vec:1
+Speed.#2.........:      139 H/s (55.52ms) @ Accel:256 Loops:8 Thr:32 Vec:1
+Speed.#*.........:    11992 H/s
+
+Started: Fri Apr 21 18:39:37 2023
+Stopped: Fri Apr 21 18:47:52 2023
